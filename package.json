@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --inline --mode development --open"
+    "build:css": "postcss src/css/tailwind.src.css -o src/css/tailwind.css",
+    "watch:css": "postcss src/css/tailwind.src.css -o src/css/tailwind.css -w",
+    "start": "npm run watch:css & webpack-dev-server --inline --mode development --open",
+    "build": "npm run build:css && webpack --mode production"
   },
   "keywords": [],
   "author": "",
@@ -19,9 +21,12 @@
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.4.2",
     "babel-loader": "^8.0.2",
     "css-loader": "^1.0.0",
+    "postcss-cli": "^6.0.1",
     "style-loader": "^0.23.0",
+    "tailwindcss": "^0.7.2",
     "webpack": "^4.19.1",
     "webpack-cli": "^3.1.1",
     "webpack-dev-server": "^3.1.8"
