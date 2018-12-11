@@ -1,4 +1,5 @@
 import React from "react"
+import { UndrawDesignerLife } from 'react-undraw-illustrations';
 
 const About = () => (
   <div>
