@@ -18,7 +18,7 @@ const ProjectCard = (props) => {
       <div className="flex items-center justify-between leading-none p-2 md:p-4">
         <button className="bg-blue-darkest hover:bg-blue-dark text-white text-xs py-1 px-2 rounded-full">
           Details
-                </button>
+        </button>
       </div>
 
     </div>
